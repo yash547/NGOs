@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".NgosRegister">
+
+    <ImageView
+        android:id="@+id/ngosreg6"
+        android:layout_width="185dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="521dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/path" />
+
+    <ImageView
+        android:id="@+id/ngosreg7"
+        android:layout_width="168dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="510dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diet" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="455dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nas" />
+
+    <EditText
+        android:id="@+id/ngoregName"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="394dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="329dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/em" />
+
+    <EditText
+        android:id="@+id/ngoregemail"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="395dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:hint="Email id"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ngoregpass"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pass" />
+
+    <Button
+        android:id="@+id/Ngoregbutton"
+        android:layout_width="210dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/blue_button_bg"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signintocontinue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

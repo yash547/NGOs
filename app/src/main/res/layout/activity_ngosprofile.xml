@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".Ngosprofile">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="230dp"
+        android:layout_height="219dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="656dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/path" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="117dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginBottom="575dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diet" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="455dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nas" />
+
+    <TextView
+        android:id="@+id/ngoprofileName"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="394dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="329dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/em" />
+
+    <TextView
+        android:id="@+id/ngoprofileemail"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="395dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ngoprofilecontact"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="405dp"
+        android:layout_height="130dp"
+
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="705dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bottomnav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <ImageView
+            android:id="@+id/ngosprofileimageView26"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="293dp"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/ngosprofileimageView28"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/additemf" />
+
+        <ImageView
+            android:id="@+id/ngosprofileimageView29"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="176dp"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51"
+            app:srcCompat="@drawable/track" />
+
+        <ImageView
+            android:id="@+id/ngosprofileimageView30"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="226dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/orderdele" />
+
+        <ImageView
+            android:id="@+id/ngosprofileimageView31"
+            android:layout_width="49dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="298dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/shutdown" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/conns" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
