@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skyblue"
-    tools:context=".NGOS.NgosLogin">
-
+    tools:context=".Users.UsersRegister">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/ngosreg6"
         android:layout_width="185dp"
         android:layout_height="194dp"
         android:layout_marginStart="98dp"
@@ -23,7 +22,7 @@
         app:srcCompat="@drawable/path" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/ngosreg7"
         android:layout_width="168dp"
         android:layout_height="143dp"
         android:layout_marginStart="144dp"
@@ -37,13 +36,46 @@
         app:srcCompat="@drawable/diet" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="133dp"
-        android:layout_marginTop="255dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="402dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="455dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nas" />
+
+    <EditText
+        android:id="@+id/UsersregName"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="394dp"
+        android:background="@drawable/rec"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="329dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,13 +83,13 @@
         app:srcCompat="@drawable/em" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Usersregemail"
         android:layout_width="262dp"
         android:layout_height="52dp"
-        android:layout_marginStart="87dp"
-        android:layout_marginTop="338dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="395dp"
         android:layout_marginEnd="87dp"
-        android:layout_marginBottom="338dp"
+        android:layout_marginBottom="284dp"
         android:background="@drawable/rec"
         android:ems="10"
         android:hint="Email id"
@@ -70,17 +102,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/Usersregpass"
         android:layout_width="262dp"
         android:layout_height="52dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="456dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="223dp"
+
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="182dp"
         android:background="@drawable/rec"
         android:ems="10"
         android:hint="Password"
-
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textColorHint="@color/black"
@@ -94,9 +126,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginTop="437dp"
         android:layout_marginEnd="128dp"
-        android:layout_marginBottom="201dp"
+        android:layout_marginBottom="156dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,47 +136,31 @@
         app:srcCompat="@drawable/pass" />
 
     <Button
-        android:id="@+id/Ngoslbutton"
+        android:id="@+id/Usersregbutton"
         android:layout_width="210dp"
         android:layout_height="63dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="547dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="134dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="93dp"
         android:background="@drawable/blue_button_bg"
-        android:text="Login"
+        android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/UsersSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="594dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/signuptocontinue" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="66dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="650dp"
-        android:visibility="invisible"
-        android:layout_marginEnd="173dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:srcCompat="@drawable/signintocontinue" />
 </androidx.constraintlayout.widget.ConstraintLayout>

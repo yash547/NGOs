@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skyblue"
-    tools:context=".Ngosprofile">
+    tools:context=".NGOS.Ngosprofile">
 
     <ImageView
         android:id="@+id/imageView15"

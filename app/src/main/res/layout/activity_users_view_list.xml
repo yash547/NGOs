@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skyblue"
-    tools:context=".NGOS.NgosViewList">
-
+    tools:context=".Users.UsersViewList">
 
     <ImageView
         android:id="@+id/imageView15"
@@ -35,5 +34,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/diet" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/skyblue"
-    tools:context=".NGOS.NgosTrack">
+    tools:context=".Restaurent.RestaurentTrack">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="405dp"
@@ -23,7 +24,7 @@
         app:layout_constraintVertical_bias="0.9">
 
         <ImageView
-            android:id="@+id/ngostractimageView26"
+            android:id="@+id/RestaurenttractimageView26"
             android:layout_width="54dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
@@ -37,7 +38,7 @@
             app:srcCompat="@drawable/user" />
 
         <ImageView
-            android:id="@+id/ngostractimageView28"
+            android:id="@+id/RestaurenttractimageView28"
             android:layout_width="54dp"
             android:layout_height="54dp"
             android:layout_marginStart="86dp"
@@ -51,7 +52,7 @@
             app:srcCompat="@drawable/additemf" />
 
         <ImageView
-            android:id="@+id/ngostractimageView29"
+            android:id="@+id/RestaurenttractimageView29"
             android:layout_width="54dp"
             android:layout_height="54dp"
             android:layout_marginTop="10dp"
@@ -64,7 +65,7 @@
             app:srcCompat="@drawable/track" />
 
         <ImageView
-            android:id="@+id/ngostractimageView30"
+            android:id="@+id/RestaurenttractimageView30"
             android:layout_width="54dp"
             android:layout_height="54dp"
             android:layout_marginStart="226dp"
@@ -78,7 +79,7 @@
             app:srcCompat="@drawable/orderdele" />
 
         <ImageView
-            android:id="@+id/ngostractimageView31"
+            android:id="@+id/RestaurenttractimageView31"
             android:layout_width="49dp"
             android:layout_height="51dp"
             android:layout_marginStart="298dp"

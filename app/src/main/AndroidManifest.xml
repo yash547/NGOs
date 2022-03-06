@@ -10,26 +10,62 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NGOs">
         <activity
-            android:name=".NgosViewList"
+            android:name=".Users.UsersViewList"
             android:exported="false" />
         <activity
-            android:name=".NgosTrack"
+            android:name=".Users.UsersTrack"
             android:exported="false" />
         <activity
-            android:name=".Ngosprofile"
+            android:name=".Users.UsersProfile"
             android:exported="false" />
         <activity
-            android:name=".NgosAddItem"
+            android:name=".Users.UsersADDItem"
+            android:exported="false" />
+        <activity
+            android:name=".Users.UsersRegister"
+            android:exported="false" />
+        <activity
+            android:name=".Users.UsersLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurent.RestaurentViewList"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurent.RestaurentTrack"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurent.RestaurentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurent.RestaurentADDItem"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurent.RestaurentRegister"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurent.RestaurentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".NGOS.NgosViewList"
+            android:exported="false" />
+        <activity
+            android:name=".NGOS.NgosTrack"
+            android:exported="false" />
+        <activity
+            android:name=".NGOS.Ngosprofile"
+            android:exported="false" />
+        <activity
+            android:name=".NGOS.NgosAddItem"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false"
             android:label="@string/title_activity_main2" />
         <activity
-            android:name=".NgosRegister"
+            android:name=".NGOS.NgosRegister"
             android:exported="false" />
         <activity
-            android:name=".NgosLogin"
+            android:name=".NGOS.NgosLogin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

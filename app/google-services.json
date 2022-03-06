@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "31409226594",
+    "project_id": "ngos-ae45b",
+    "storage_bucket": "ngos-ae45b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31409226594:android:00192ea5c4508203fae23b",
+        "android_client_info": {
+          "package_name": "com.example.ngos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31409226594-8em7cb41ql4ag8t3idhjj2rrjo49hhmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_sL5p_pSPLTjhZK0LRqXE_drM7-p1kkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31409226594-8em7cb41ql4ag8t3idhjj2rrjo49hhmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
