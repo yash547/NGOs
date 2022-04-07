@@ -7,10 +7,14 @@ import android.view.View
 import android.widget.*
 import com.example.ngos.R
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class NgosRegister : AppCompatActivity() {
 
     private lateinit var NGOSREauth: FirebaseAuth
+
+    private  lateinit var NgoDatabaseReference : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +39,8 @@ val progress=findViewById<ProgressBar>(R.id.progressBar2)
         // firebase connection
         NGOSREauth  = FirebaseAuth.getInstance()
 
+        NgoDatabaseReference = FirebaseDatabase.getInstance().getReference("NGOUSERSDETAILS")
+
         // maintain the session
         if( NGOSREauth .currentUser!=null)
         {
@@ -42,7 +48,7 @@ val progress=findViewById<ProgressBar>(R.id.progressBar2)
             startActivity(intent)
         }
 
-// firebase registration process start
+// firebase registration & realtime database process start
 
         btnreg.setOnClickListener {
 
@@ -50,18 +56,40 @@ val progress=findViewById<ProgressBar>(R.id.progressBar2)
             val ngoemailR=ngosregemail.text.toString()
             val ngosPasswordR=ngosregpass.text.toString()
 
+
             progress.visibility= View.VISIBLE
 
             NGOSREauth .createUserWithEmailAndPassword(ngoemailR,ngosPasswordR).addOnCompleteListener {
 
                 if(it.isSuccessful)
                 {
-                    Toast.makeText(this, "ngo user created", Toast.LENGTH_SHORT).show()
-                    val intent= Intent(this, NgosAddItem::class.java)
-                    startActivity(intent)
+
+                    val currentUser= NGOSREauth.currentUser
+
+                    val userid= currentUser?.uid
+
+                    val uj :String =userid.toString()
+                    val w= Users(ngoemailR,ngoNameR,ngosPasswordR)
+
+                   if (userid != null) {
+
+                         NgoDatabaseReference .child(uj).setValue(w).addOnSuccessListener {
+
+                            Toast.makeText(this, "ngo user created", Toast.LENGTH_SHORT).show()
+
+                            val intent= Intent(this, NgosAddItem::class.java)
+                            startActivity(intent)
+
+
+                        }.addOnFailureListener {
+                            Toast.makeText(this, "sorry server issue", Toast.LENGTH_SHORT).show()
+                        }
+                    }
 
 
                 }
+
+
 
 
             }

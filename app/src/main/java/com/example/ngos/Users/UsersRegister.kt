@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.example.ngos.R
 import com.example.ngos.Restaurent.RestaurentADDItem
 import com.example.ngos.Restaurent.RestaurentLogin
+import com.example.ngos.Users.UsersADDItem
 import com.google.firebase.auth.FirebaseAuth
 
 class UsersRegister : AppCompatActivity() {
@@ -43,16 +44,16 @@ class UsersRegister : AppCompatActivity() {
 
         }
 
-        // firebase connection
-        UsersREauth  = FirebaseAuth.getInstance()
-
-        // maintain the session
-        if( UsersREauth .currentUser!=null)
-        {
-            val intent= Intent(this, UsersADDItem::class.java)
-            startActivity(intent)
-        }
-
+//        // firebase connection
+//        UsersREauth  = FirebaseAuth.getInstance()
+//
+//        // maintain the session
+//        if( UsersREauth .currentUser!=null)
+//        {
+//            val intent= Intent(this, UsersADDItem::class.java)
+//            startActivity(intent)
+//        }
+//
 
 
 // firebase registration process start

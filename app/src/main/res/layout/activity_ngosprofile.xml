@@ -59,6 +59,7 @@
         android:layout_marginBottom="394dp"
         android:background="@drawable/rec"
         android:ems="10"
+        android:textSize="30dp"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,24 +91,8 @@
         android:layout_marginBottom="284dp"
         android:background="@drawable/rec"
         android:ems="10"
-        android:textAlignment="center"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/ngoprofilecontact"
-        android:layout_width="262dp"
-        android:layout_height="52dp"
-
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="497dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginBottom="182dp"
-        android:background="@drawable/rec"
-        android:ems="10"
+        android:textSize="20dp"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -201,19 +186,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="144dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="448dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="234dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/conns" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
