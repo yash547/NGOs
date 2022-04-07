@@ -130,4 +130,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/signuptocontinue" />
+
+    <ProgressBar
+        android:id="@+id/progressBar42"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="660dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import com.example.ngos.MainActivity
 import com.example.ngos.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -25,12 +26,15 @@ import kotlin.random.Random
 class NgosAddItem : AppCompatActivity() {
 
   //  private lateinit var NGOSREauth: FirebaseAuth
+
     var user: FirebaseUser? = null
     private  lateinit var NgoDatabaseReference : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ngos_add_item)
+
+
         val ngoSprofile =findViewById<ImageView>(R.id.imageView26)
         val ngoStrack =findViewById<ImageView>(R.id.imageView29)
         val ngoSviewlist =findViewById<ImageView>(R.id.imageView30)
@@ -51,9 +55,10 @@ class NgosAddItem : AppCompatActivity() {
             val intent=Intent(this, NgosViewList::class.java )
             startActivity(intent)
         }
+
         ngoSlogouts.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            val intent= Intent(this, NgosRegister::class.java)
+            val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

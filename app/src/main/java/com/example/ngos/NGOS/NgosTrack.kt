@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import com.example.ngos.MainActivity
 import com.example.ngos.R
 import com.google.firebase.auth.FirebaseAuth
 
@@ -32,7 +33,7 @@ class NgosTrack : AppCompatActivity() {
         }
         ngoTlogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            val intent= Intent(this, NgosRegister::class.java)
+            val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

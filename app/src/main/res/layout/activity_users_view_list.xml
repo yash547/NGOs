@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="230dp"
-        android:layout_height="219dp"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
         android:layout_marginEnd="204dp"
         android:layout_marginBottom="656dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,17 +21,50 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/path" />
 
+
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="117dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="247dp"
-        android:layout_marginBottom="575dp"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="326dp"
+        android:layout_marginBottom="639dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/diet" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="361dp"
+        android:layout_height="578dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Resrecyclerview12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.751"
+            tools:listitem="@layout/restaurentviewlistr" />
+
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

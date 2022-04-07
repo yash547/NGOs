@@ -7,12 +7,19 @@ import android.view.View
 import android.widget.*
 import com.example.ngos.NGOS.NgosAddItem
 import com.example.ngos.NGOS.NgosLogin
+import com.example.ngos.NGOS.Users
 import com.example.ngos.R
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class RestaurentRegister : AppCompatActivity() {
 
+
+    private  lateinit var ResDatabaseReference : DatabaseReference
     private lateinit var RestaurentREauth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restaurent_register)
@@ -38,6 +45,8 @@ class RestaurentRegister : AppCompatActivity() {
         // firebase connection
         RestaurentREauth  = FirebaseAuth.getInstance()
 
+        ResDatabaseReference= FirebaseDatabase.getInstance().getReference("RESTAURENTUSERSDETAILS")
+
         // maintain the session
         if( RestaurentREauth .currentUser!=null)
         {
@@ -60,9 +69,29 @@ class RestaurentRegister : AppCompatActivity() {
 
                 if(it.isSuccessful)
                 {
-                    Toast.makeText(this, "Restaurent user created", Toast.LENGTH_SHORT).show()
-                    val intent= Intent(this, RestaurentADDItem::class.java)
-                    startActivity(intent)
+
+                    val currentUser= RestaurentREauth.currentUser
+
+                    val userid= currentUser?.uid
+
+                    val uj :String =userid.toString()
+                    val w= ResUsers(resemailR,resNameR,resPasswordR)
+
+                    if (userid != null) {
+
+                        ResDatabaseReference .child(uj).setValue(w).addOnSuccessListener {
+
+                            Toast.makeText(this, "Restaurent user created", Toast.LENGTH_SHORT).show()
+                            val intent= Intent(this, RestaurentADDItem::class.java)
+                            startActivity(intent)
+
+
+
+                        }.addOnFailureListener {
+                            Toast.makeText(this, "sorry server issue", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+
 
 
                 }

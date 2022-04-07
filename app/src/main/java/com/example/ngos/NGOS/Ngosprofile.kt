@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ngos.MainActivity
 import com.example.ngos.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -16,6 +17,7 @@ import com.google.firebase.database.*
 class Ngosprofile : AppCompatActivity() {
     var reference: DatabaseReference? = null
     var user: FirebaseUser? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ngosprofile)
@@ -42,9 +44,10 @@ class Ngosprofile : AppCompatActivity() {
             val intent= Intent(this, NgosViewList::class.java )
             startActivity(intent)
         }
+
         ngoSplogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            val intent= Intent(this, NgosRegister::class.java)
+            val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

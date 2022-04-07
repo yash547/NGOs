@@ -59,6 +59,8 @@
         android:layout_marginBottom="394dp"
         android:background="@drawable/rec"
         android:ems="10"
+
+        android:textSize="30dp"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,6 +92,8 @@
         android:layout_marginBottom="284dp"
         android:background="@drawable/rec"
         android:ems="10"
+
+        android:textSize="20dp"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

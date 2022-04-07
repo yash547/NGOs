@@ -34,7 +34,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/fooditemslist"
+                android:id="@+id/usersSfooditemslist"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
@@ -61,7 +61,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/feedcountlist"
+                android:id="@+id/usersSfeedcountlist"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
@@ -89,7 +89,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/datetimelist"
+                android:id="@+id/usersSdatetimelist"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
@@ -116,7 +116,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/statuslist"
+                android:id="@+id/usersSstatuslist"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
@@ -128,6 +128,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 
 </androidx.cardview.widget.CardView>
